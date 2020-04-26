@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(plugin = {"json:target/cucumber.json"},
 		features = "Feature99"
 		,glue={"step_definition"}
-,tags = {"@Registration" }
+,tags = {" @Login" }
 		)
 public class Testrunner {
 	

@@ -3,182 +3,68 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "I want to register successfully in TestMeApp",
+        "line": 26,
+        "name": "I want to login into TestMeApp with valid credentials",
         "description": "",
-        "id": "perform-all-the-functions-in-testmeapp;i-want-to-register-successfully-in-testmeapp",
+        "id": "perform-all-the-functions-in-testmeapp;i-want-to-login-into-testmeapp-with-valid-credentials;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 38533555800,
+              "duration": 38822439092,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I will be on SignUp page",
+            "line": 19,
+            "name": "I will be on Login Page",
             "match": {
-              "location": "Test_steps.i_will_be_on_SignUp_page()"
+              "location": "Test_steps.i_will_be_on_Login_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 144860300,
+              "duration": 351940477,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I will enter username \"zzzzxxzzpravin918\"",
+            "line": 20,
+            "name": "I will enter \"lalitha\" and \"password123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"zzzzxxzzpravin918\"",
-                  "offset": 22
+                  "val": "\"lalitha\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"password123\"",
+                  "offset": 27
                 }
               ],
-              "location": "Test_steps.i_will_enter_username(String)"
+              "location": "Test_steps.i_will_enter_and(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 232023000,
+              "duration": 27243623055,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I will enter firstname,lastname \"pravin\" , \"singh\"",
+            "line": 21,
+            "name": "I click on login button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"pravin\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"singh\"",
-                  "offset": 43
-                }
-              ],
-              "location": "Test_steps.i_will_enter_firstname_lastname(String,String)"
+              "location": "Test_steps.i_click_on_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 295842200,
+              "duration": 178280189,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I will enter password,confirmPassword \"pravin\" , \"pravin\"",
+            "line": 22,
+            "name": "I should be logged in successfully",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"pravin\"",
-                  "offset": 38
-                },
-                {
-                  "val": "\"pravin\"",
-                  "offset": 49
-                }
-              ],
-              "location": "Test_steps.i_will_enter_password_confirmPassword(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 95130000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I will select gender as Male",
-            "match": {
-              "location": "Test_steps.i_will_select_gender_as_Male()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 323209600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I will enter emailid and mobilenumber \"abcdef@gmail.com\" , \"9986111370\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abcdef@gmail.com\"",
-                  "offset": 38
-                },
-                {
-                  "val": "\"9986111370\"",
-                  "offset": 59
-                }
-              ],
-              "location": "Test_steps.i_will_enter_emailid_and_mobilenumber(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 297893900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I will enter DOB and address \"06/20/1993\" , \"lucknow\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"06/20/1993\"",
-                  "offset": 29
-                },
-                {
-                  "val": "\"lucknow\"",
-                  "offset": 44
-                }
-              ],
-              "location": "Test_steps.i_will_enter_DOB_and_address(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 582033500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I will select security question and enters answer \"Black\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Black\"",
-                  "offset": 50
-                }
-              ],
-              "location": "Test_steps.i_will_select_security_question_and_enters_answer(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 886494200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I will click on Register",
-            "match": {
-              "location": "Test_steps.i_will_click_on_Register()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 456249400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I validate whether I have registered successfully in TestMeApp",
-            "match": {
-              "location": "Test_steps.i_validate_whether_I_have_registered_successfully_in_TestMeApp()"
+              "location": "Test_steps.i_should_be_logged_in_successfully()"
             },
             "keyword": "Then "
           }
@@ -188,7 +74,7 @@
             "name": "@TestMeApp"
           },
           {
-            "name": "@Registration"
+            "name": "@Login"
           }
         ]
       }
